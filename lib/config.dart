@@ -8,11 +8,15 @@ class AppColors{
   static const CoversationTitleColor = 0xff353535;
   static const CoversationItemColor = 0xffffffff;
   static const DesCoversationColor = 0xff353535;
+  static const NotifyDotBg = 0xffff3e3e;
+  static const NotifyText = 0xffffffff;
+  static const DeviceInfoBg = 0xfff5f5f5;
+  static const DeviceInfoText = 0xff606062;
 }
 
 class AppStyle {
   static const TitleStyle = TextStyle(
-    fontSize: 20,
+    fontSize: 18,
     color: Color(AppColors.CoversationTitleColor),
     
   );
@@ -20,8 +24,17 @@ class AppStyle {
     fontSize: 14,
     color: Color(AppColors.DesCoversationColor),
   );
+  static const NotifyMsgCountDotStyle = TextStyle(
+    fontSize: 12,
+    color: Color(AppColors.NotifyText),
+  );
+  static const DeviceInfoTextStyle = TextStyle(
+    fontSize: 13.0,
+    color: Color(AppColors.DeviceInfoText)
+  );
 }
 
 class Constans {
   static const IconFontFamilt = 'appIconFont';
+  static const DeviceInfoHeight = 32.0;
 }

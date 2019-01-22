@@ -23,6 +23,10 @@ class Conversation {
   ) : assert(avatar != null,),
       assert(title != null),
       assert(updateAt != null);
+
+  bool isNetwork() { //用于判断是否是网路资源路径
+    return this.avatar.startsWith('http://') || this.avatar.startsWith('https://');
+  }
 }
 
 const List<Conversation> coversationList = [

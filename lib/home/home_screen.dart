@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weixin/config.dart';
 
 import 'coversation_page.dart';
-
+import 'concat_page.dart';
 class NavigationIconView{
   NavigationIconView({Key key, String title, IconData icon, Color color, IconData activeIcon}) : 
     _title = title,
@@ -94,13 +94,12 @@ class _HomeScreenState extends State<HomeScreen> {
     this._pageController = PageController(initialPage: _currentIndex);
     this._pageList = [
       CoversationPage(),
-      Container(
-        
-        color: Colors.greenAccent,
-      ),
+      ContactPage(),
       Container(color: Colors.black,),
       Container(color: Colors.amber,),
     ];
+
+
   }
 
   Widget _buildPopupMeauItem(int iconName, String title) {
